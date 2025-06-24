@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+body {
+    min-height: 100vh;
+    background: url('./2B5A6768.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+    background-attachment: fixed; 
+    font-family: "Merienda", cursive;
+    line-height: 1.25;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+}
+.title{
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.hero {
+    width: 100%;
+
+    margin-top: 5rem;
+    /* height: calc(100vh - 75px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:  2rem;
+}
+.hero-content p{
+    color: rgb(201, 185, 163);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+    font-family: "Merienda", cursive;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+   
+}
+
+.names{
+    position: absolute;
+    top: 106px;
+    left: 95px;
+}
+
+.hero-content{
+    position: relative;
+}
+
+.hero-icon04{
+    position: absolute;
+    top: 177px;
+    left: 34px;
+    width: 24px;
+    z-index: -1;
+}
+
+.hero-icon05{
+    position: absolute;
+    top: 250px;
+    left: 1px;
+    width: 70px;
+    z-index: -1;
+}
+
+.hero-icon07{
+    position: absolute;
+    top: 77px;
+    width: 36px;
+    left: -31px;
+    z-index: -1;
+}
+
+.hero-icon03{
+    position: absolute;
+    top: 291px;
+    left: 80px;
+    width: 68px;
+    z-index: -1;
+}
+
+.hero-icon06{
+    position: absolute;
+    top: 184px;
+    left: -40px;
+    width: 68px;
+    z-index: -1;
+}
+
+.content {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    /* background: rgba(255, 255, 255, 0.8); */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content p {
+    margin-bottom: 1rem;
+    color:antiquewhite;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.calendar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 4rem;
+    
+}
+
+.calendar p {
+    color: antiquewhite;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.calendar-content{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    /* width: 100%; */
+    max-width: 800px;
+}
+
+.calendar-content p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.day{
+    opacity: 1 !important;
+} 
+
+.ring-icon{
+    position: absolute;
+    width: 36px;
+    top: 26px;
+    left: 106px;
+}
+
+.date{
+    margin: 2rem 0;
+    color: antiquewhite;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.ceremony{
+    margin-top: 6rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+    text-align: center;  
+}
+
+
+.ceremony p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.ceremony h2{
+    /* font-size: 1.5rem; */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.reception{
+    margin-top: 6rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+    text-align: center;  
+}
+
+.reception p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.reception a{
+    color: rgb(237, 230, 223);
+    /* text-decoration: none; */
+    font-weight: 500;
+}
+
+hr{
+    width: 200px;
+    margin: 2rem auto;
+}
+
+
+
+@media (max-width: 931px) {
+  body{
+       background-position: center;
+  }
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 5s ease-out both;
+}
