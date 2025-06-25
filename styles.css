@@ -242,8 +242,10 @@ hr{
 
 @media (max-width: 931px) {
   body{
-       background-position: center;
-  }
+        background-position: center;
+        background-position-y: 1px;
+        background-size: 100% 100vh;
+    }
 }
 
 section {
