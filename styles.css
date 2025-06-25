@@ -21,7 +21,7 @@ body::before {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background-color: rgba(0, 0, 0, 0.25);
-    z-index: -1;
+    /* z-index: -1; */
 }
 .title{
     color: antiquewhite;
@@ -43,9 +43,19 @@ body::before {
     text-align: center;
     padding:  2rem;
 }
+
+
+.hero-image{
+    background-image: url('./01.svg');
+    background-size: cover;
+    width: 431px;
+    height: 411px;
+    background-position: center;
+}
+
 .hero-content p{
     color: rgb(201, 185, 163);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 0.3rem;
     font-family: "Merienda", cursive;
@@ -56,8 +66,8 @@ body::before {
 
 .names{
     position: absolute;
-    top: 106px;
-    left: 95px;
+    top: 146px;
+    left: 131px;
 }
 
 .hero-content{
@@ -66,42 +76,50 @@ body::before {
 
 .hero-icon04{
     position: absolute;
-    top: 177px;
+    top: 246px;
     left: 34px;
-    width: 24px;
-    z-index: -1;
+    width: 28px;
+    /* z-index: -1; */
+}
+
+.hero-icon02{
+    position: absolute;
+    top: 302px;
+    left: 98px;
+    width: 28px;
+    /* z-index: -1; */
 }
 
 .hero-icon05{
     position: absolute;
-    top: 250px;
+    top: 346px;
     left: 1px;
-    width: 70px;
-    z-index: -1;
+    width: 83px;
+    /* z-index: -1; */
 }
 
 .hero-icon07{
     position: absolute;
-    top: 77px;
-    width: 36px;
+    top: 139px;
+    width: 39px;
     left: -31px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .hero-icon03{
     position: absolute;
-    top: 291px;
+    top: 400px;
     left: 80px;
     width: 68px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .hero-icon06{
     position: absolute;
-    top: 184px;
+    top: 270px;
     left: -40px;
-    width: 68px;
-    z-index: -1;
+    width: 70px;
+    /* z-index: -1; */
 }
 
 .content {

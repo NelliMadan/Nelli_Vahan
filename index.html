@@ -15,28 +15,29 @@
   </head>
   <body>
     <h2 class="title">Wedding Invitation</h2>
-     <section class="fadeInUp">
-         <div class="hero">
-           <div class="hero-content">
-             <!-- <p>Join us for our wedding celebration!</p>
+    <section class="fadeInUp">
+      <div class="hero">
+        <div class="hero-content">
+          <!-- <p>Join us for our wedding celebration!</p>
              <p>We are excited to invite you to our special day.</p>
              <p>Save the date and celebrate with us!</p> -->
-             <div class="names">
-               <p>Nelli</p>
-               <p>Vahan</p>
-             </div>
-     
-             <div style="position: relative">
-               <img src="./01.svg" width="100%" class="hero-image" />
-               <img src="./04.svg" class="hero-icon04" />
-               <img src="./03.svg" class="hero-icon03" />
-               <img src="./05.svg" class="hero-icon05" />
-               <img src="./06.svg" class="hero-icon06" />
-               <img src="./07.svg" class="hero-icon07" />
-             </div>
-           </div>
-         </div>
-     </section>
+          <div class="names">
+            <p>Nelli</p>
+            <p>Vahan</p>
+          </div>
+
+          <div class="hero-image" style="position: relative">
+            <!-- <img src="./01.svg" width="100%" class="hero-image" /> -->
+            <img src="./04.svg" class="hero-icon04" />
+            <img src="./04.svg" class="hero-icon02" />
+            <img src="./03.svg" class="hero-icon03" />
+            <img src="./05.svg" class="hero-icon05" />
+            <img src="./06.svg" class="hero-icon06" />
+            <img src="./07.svg" class="hero-icon07" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <p class="date">21.08.2025</p>
@@ -114,7 +115,6 @@
       <hr />
     </section>
     <section>
-
       <div class="reception">
         <h2>Reception</h2>
         <p>6:00 PM</p>
@@ -163,21 +163,21 @@
     </footer>
   </body>
   <script>
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll("section");
     const options = {
-      threshold: 0.3
+      threshold: 0.3,
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+          entry.target.classList.add("visible");
           observer.unobserve(entry.target);
         }
       });
     }, options);
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       observer.observe(section);
     });
   </script>
