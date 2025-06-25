@@ -48,14 +48,14 @@ body::before {
 .hero-image{
     background-image: url('./01.svg');
     background-size: cover;
-    width: 431px;
-    height: 411px;
+    width: 298px;
+    height: 283px;
     background-position: center;
 }
 
 .hero-content p{
     color: rgb(201, 185, 163);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     margin-bottom: 0.3rem;
     font-family: "Merienda", cursive;
@@ -66,8 +66,8 @@ body::before {
 
 .names{
     position: absolute;
-    top: 146px;
-    left: 131px;
+    top: 116px;
+    left: 97px;
 }
 
 .hero-content{
@@ -76,50 +76,50 @@ body::before {
 
 .hero-icon04{
     position: absolute;
-    top: 246px;
-    left: 34px;
-    width: 28px;
-    /* z-index: -1; */
+    top: 153px;
+    left: 18px;
+    width: 24px;
+    z-index: -1;
 }
 
 .hero-icon02{
     position: absolute;
-    top: 302px;
-    left: 98px;
-    width: 28px;
-    /* z-index: -1; */
+    top: 199px;
+    left: 60px;
+    width: 20px;
+    z-index: -1;
 }
 
 .hero-icon05{
     position: absolute;
-    top: 346px;
+    top: 245px;
     left: 1px;
-    width: 83px;
-    /* z-index: -1; */
+    width: 75px;
+    z-index: -1;
 }
 
 .hero-icon07{
     position: absolute;
-    top: 139px;
-    width: 39px;
-    left: -31px;
-    /* z-index: -1; */
+    top: 81px;
+    width: 34px;
+    left: -27px;
+    z-index: -1;
 }
 
 .hero-icon03{
     position: absolute;
-    top: 400px;
+    top: 283px;
     left: 80px;
     width: 68px;
-    /* z-index: -1; */
+    z-index: -1;
 }
 
 .hero-icon06{
     position: absolute;
-    top: 270px;
-    left: -40px;
-    width: 70px;
-    /* z-index: -1; */
+    top: 170px;
+    left: -37px;
+    width: 50px;
+    z-index: -1;
 }
 
 .content {
