@@ -27,7 +27,7 @@ body::before {
 .container-wrapper{
     height: 100vh;
     background-image: url('./2B5A6806.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
     
@@ -265,10 +265,9 @@ hr{
 
 
 @media (max-width: 931px) {
-  body{
-    background-position: top center;
-    /* background-position-y: 1px; */
-    /* background-size: 150% ; */
+ 
+    .container-wrapper{
+      background-size: cover;
     }
 }
 
