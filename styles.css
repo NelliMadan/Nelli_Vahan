@@ -7,6 +7,7 @@ body {
     line-height: 1.25;
     font-optical-sizing: auto;
     font-style: normal;
+    overflow: hidden;
 }
 
 section {
@@ -29,6 +30,7 @@ section.visible {
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
+    overflow: hidden;
    
 }
 
@@ -36,7 +38,6 @@ section.visible {
 .image-container {
     height: 100%;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: rgba(0, 0, 0, 0.25);
     margin: 0;
