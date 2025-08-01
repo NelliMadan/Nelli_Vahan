@@ -127,7 +127,7 @@
              </p> -->
         </div>
       </section>
-      <!-- <section
+      <section
         class="map-section"
         style="max-width: 600px; margin: 2rem auto; text-align: center"
       >
@@ -153,7 +153,7 @@
         <p style="font-size: 1.2rem; margin-top: 0.5rem; color: #ffd4b2">
           We hope you can make it!
         </p>
-      </footer> -->
+      </footer>
       </section>
     </div>
   </body>
@@ -175,5 +175,12 @@
     sections.forEach((section) => {
       observer.observe(section);
     });
+
+      function setVh() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      setVh();
+      window.addEventListener('resize', setVh);
   </script>
 </html>
